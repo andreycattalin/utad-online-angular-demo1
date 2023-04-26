@@ -1,0 +1,11 @@
+<div>
+    <h2>{{title}}</h2>
+    <p>{{desc}}</p>
+
+    <input type="text" #oficio>
+    <button (click)="addService(oficio.value)">Añadir</button>
+
+    <ul>
+        <li *ngFor="let serivice of myServices">{{serivice}}</li>
+    </ul>
+</div>
